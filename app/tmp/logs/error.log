@@ -1,0 +1,57 @@
+2013-12-04 10:57:52 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+Exception Attributes: array (
+  'config' => 'default',
+)
+Request URL: /FB_base/FB_Base_Cake/
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Model/ConnectionManager.php(93): ConnectionManager::_getConnectionObject('default')
+#1 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Model/Model.php(3288): ConnectionManager::getDataSource('default')
+#2 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Model/Model.php(1107): Model->setDataSource('default')
+#3 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Model/Model.php(3310): Model->setSource('regiones')
+#4 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Model/Model.php(2750): Model->getDataSource()
+#5 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/app/Controller/PagesController.php(69): Model->find('all')
+#7 [internal function]: PagesController->display('home')
+#8 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-12-04 10:57:52 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+Exception Attributes: array (
+  'config' => 'default',
+)
+Request URL: /FB_base/FB_Base_Cake/
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Model/ConnectionManager.php(93): ConnectionManager::_getConnectionObject('default')
+#1 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Model/Model.php(3288): ConnectionManager::getDataSource('default')
+#2 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Model/Model.php(1107): Model->setDataSource('default')
+#3 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Model/Model.php(3310): Model->setSource('regiones')
+#4 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Model/Model.php(2750): Model->getDataSource()
+#5 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/app/Controller/PagesController.php(69): Model->find('all')
+#7 [internal function]: PagesController->display('home')
+#8 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-12-04 11:00:06 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+Exception Attributes: array (
+  'config' => 'default',
+)
+Request URL: /FB_base/FB_Base_Cake/
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Model/ConnectionManager.php(93): ConnectionManager::_getConnectionObject('default')
+#1 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Model/Model.php(3288): ConnectionManager::getDataSource('default')
+#2 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Model/Model.php(1107): Model->setDataSource('default')
+#3 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Model/Model.php(3310): Model->setSource('regiones')
+#4 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Model/Model.php(2750): Model->getDataSource()
+#5 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/app/Controller/PagesController.php(69): Model->find('all')
+#7 [internal function]: PagesController->display('home')
+#8 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
