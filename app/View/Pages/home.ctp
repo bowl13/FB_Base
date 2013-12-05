@@ -4,7 +4,7 @@
 
 <div id="registro">
 
-    <form name="data" id="data" method="post" action="<?php echo $this->Html->url(array('controller' => 'usuarios', 'action' => 'save'), true); ?>" role="form">
+    <form name="data" id="data" method="post" action="<?php echo $this->Html->url(array('controller' => 'usuarios', 'action' => 'save'), true); ?>" role="form" class="form-horizontal">
 
         <div class="container text-center">
             <h1>¡Registrate Y GANA!</h1>
@@ -22,44 +22,61 @@
 
                     <div class="col-sm-12">
 
-                        <div class="form-group">
-                            <label class="text-right" for="inputNomb">Nombre</label>
-                            <input type="text" name="firstname" id="firstname" value="<?php if($userData["firstname"]) echo $userData["firstname"] ?>" class="required text form-control" text="Ingresa tu nombre">
-                        </div>
-                        <div class="form-group">
-                            <label class="text-right" for="inputApel">Apellido</label>
-                            <input type="text" name="lastname" id="lastname" value="<?php if($userData["lastname"]) echo $userData["lastname"] ?>" class="required text form-control" text="Ingresa tu apellido">
-                        </div>
-                        <div class="form-group">
-                            <label class="text-right" for="inputRut">RUT</label>
-                            <input type="text" name="rut" id="rut" value="" class="required rut form-control" text="Ingresa tu rut">
-                        </div>
-                        <div class="form-group">
-                            <label class="text-right" for="inputEmail">E-Mail</label>
-                            <input type="text" name="email" id="email" value="<?php if($userData["email"]) echo $userData["email"] ?>" class="required email form-control" text="Ingresa tu email">
-                        </div>
-                        <div class="form-group">
-                            <label class="text-right" for="inputCelu">Celular</label>
-                            <input type="text" name="phone" id="phone" value="" class="required phone form-control" text="Ingresa tu celular">
-                        </div>
-                        <div class="form-group">
-                            <label class="text-right" for="inputDirec">Dirección</label>
-                            <input type="text" name="address" id="address" value="" class="required notempty form-control" text="Ingresa tu dirección">
-                        </div>
-                        <div class="form-group">
-                            <label class="text-right" for="inputDirec">Región</label>
-                            <select name="region_id" id="region_id" class="required select form-control" text="Selecciona tu región">
-                                    <option value="">Selecciona</option>
-                                    <?php foreach ( $regiones as $region ) { ?>
-                                    <option value="<?php print $region['Regione']['id']; ?>"><?php print $region['Regione']['name']; ?></option>
-                                    <?php } ?>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label class="text-right" for="inputDirec">Comuna</label>
-                            <select name="comuna_id" id="comuna_id" class="required select form-control" text="Selecciona tu comuna">
-                                    <option value="">Selecciona</option>
-                            </select>
+                        <div class="row">
+                            
+                           <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="form-group col-sm-6 well-sm">
+                                        <label for="inputNomb">Nombre</label>
+                                        <input type="text" name="firstname" id="firstname" value="<?php if($userData["firstname"]) echo $userData["firstname"] ?>" class="required text form-control" text="Ingresa tu nombre">
+                                    </div>
+                                    <div class="form-group col-sm-6 well-sm">
+                                        <label for="inputApel">Apellido</label>
+                                        <input type="text" name="lastname" id="lastname" value="<?php if($userData["lastname"]) echo $userData["lastname"] ?>" class="required text form-control" text="Ingresa tu apellido">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="form-group col-sm-6 well-sm">
+                                        <label for="inputRut">RUT</label>
+                                        <input type="text" name="rut" id="rut" value="" class="required rut form-control" text="Ingresa tu rut">
+                                    </div>
+                                    <div class="form-group col-sm-6 well-sm">
+                                        <label for="inputEmail">E-Mail</label>
+                                        <input type="text" name="email" id="email" value="<?php if($userData["email"]) echo $userData["email"] ?>" class="required email form-control" text="Ingresa tu email">
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="form-group col-sm-6 well-sm">
+                                        <label for="inputCelu">Celular</label>
+                                        <input type="text" name="phone" id="phone" value="" class="required phone form-control" text="Ingresa tu celular">
+                                    </div>
+                                    <div class="form-group col-sm-6 well-sm">
+                                        <label for="inputDirec">Dirección</label>
+                                        <input type="text" name="address" id="address" value="" class="required notempty form-control" text="Ingresa tu dirección">
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="form-group col-sm-6 well-sm">
+                                        <label for="inputDirec">Región</label>
+                                        <select name="region_id" id="region_id" class="required select form-control" text="Selecciona tu región">
+                                                <option value="">Selecciona</option>
+                                                <?php foreach ( $regiones as $region ) { ?>
+                                                <option value="<?php print $region['Regione']['id']; ?>"><?php print $region['Regione']['name']; ?></option>
+                                                <?php } ?>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-sm-6 well-sm">
+                                        <label for="inputDirec">Comuna</label>
+                                        <select name="comuna_id" id="comuna_id" class="required select form-control" text="Selecciona tu comuna">
+                                                <option value="">Selecciona</option>
+                                        </select>
+                                    </div>
+                                </div>
+                           </div>
+                            
                         </div>
 
                     </div>

@@ -55,3 +55,467 @@ Stack Trace:
 #10 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
 #11 /Users/mauro/Documents/git_repos/FB_base/FB_Base_Cake/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2013-12-05 10:43:34 Error: [Exception] parse error: failed at `@bi-app-left            : ~`"@{text-direction}" === 'ltr' ? 'left'  : 'right'`;` /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/less/variables.less on line 40
+Request URL: /FB_Base/FB_Base/
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2273): lessc_parser->throwError()
+#1 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(121): lessc_parser->parse('//?// Variables...')
+#2 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#3 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(162): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#4 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(147): lessc->compileImportedProps(Array, Object(stdClass), Object(stdClass), Object(lessc_parser), '/Users/mauro/Do...')
+#5 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#6 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(284): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#7 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(278): lessc->compileProps(Object(stdClass), Object(stdClass))
+#8 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(193): lessc->compileRoot(Object(stdClass))
+#9 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1807): lessc->compileBlock(Object(stdClass))
+#10 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1830): lessc->compile('@import "bootst...', '/Users/mauro/Do...')
+#11 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1844): lessc->compileFile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#12 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2016): lessc->checkedCompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#13 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Controller/Component/CakelessComponent.php(37): lessc::ccompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#14 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/AppController.php(41): CakelessComponent->compile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#15 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#16 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#18 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/PagesController.php(93): Controller->render('home')
+#19 [internal function]: PagesController->display('home')
+#20 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#21 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#22 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#23 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#24 {main}
+2013-12-05 10:43:34 Error: [Exception] parse error: failed at `@bi-app-left            : ~`"@{text-direction}" === 'ltr' ? 'left'  : 'right'`;` /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/less/variables.less on line 40
+Request URL: /FB_Base/FB_Base/
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2273): lessc_parser->throwError()
+#1 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(121): lessc_parser->parse('//?// Variables...')
+#2 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#3 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(162): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#4 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(147): lessc->compileImportedProps(Array, Object(stdClass), Object(stdClass), Object(lessc_parser), '/Users/mauro/Do...')
+#5 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#6 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(284): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#7 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(278): lessc->compileProps(Object(stdClass), Object(stdClass))
+#8 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(193): lessc->compileRoot(Object(stdClass))
+#9 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1807): lessc->compileBlock(Object(stdClass))
+#10 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1830): lessc->compile('@import "bootst...', '/Users/mauro/Do...')
+#11 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1844): lessc->compileFile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#12 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2016): lessc->checkedCompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#13 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Controller/Component/CakelessComponent.php(37): lessc::ccompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#14 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/AppController.php(41): CakelessComponent->compile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#15 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#16 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#18 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/PagesController.php(93): Controller->render('home')
+#19 [internal function]: PagesController->display('home')
+#20 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#21 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#22 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#23 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#24 {main}
+2013-12-05 10:43:34 Error: [Exception] parse error: failed at `@bi-app-left            : ~`"@{text-direction}" === 'ltr' ? 'left'  : 'right'`;` /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/less/variables.less on line 40
+Request URL: /FB_Base/FB_Base/
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2273): lessc_parser->throwError()
+#1 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(121): lessc_parser->parse('//?// Variables...')
+#2 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#3 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(162): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#4 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(147): lessc->compileImportedProps(Array, Object(stdClass), Object(stdClass), Object(lessc_parser), '/Users/mauro/Do...')
+#5 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#6 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(284): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#7 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(278): lessc->compileProps(Object(stdClass), Object(stdClass))
+#8 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(193): lessc->compileRoot(Object(stdClass))
+#9 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1807): lessc->compileBlock(Object(stdClass))
+#10 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1830): lessc->compile('@import "bootst...', '/Users/mauro/Do...')
+#11 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1844): lessc->compileFile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#12 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2016): lessc->checkedCompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#13 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Controller/Component/CakelessComponent.php(37): lessc::ccompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#14 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/AppController.php(41): CakelessComponent->compile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#15 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#16 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#18 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/PagesController.php(93): Controller->render('home')
+#19 [internal function]: PagesController->display('home')
+#20 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#21 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#22 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#23 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#24 {main}
+2013-12-05 10:43:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /FB_Base/FB_Base/css/cake.generic.css
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-05 10:44:17 Error: [Exception] parse error: failed at `@bi-app-left            : "@{text-direction}" === 'ltr' ? 'left'  : 'right';` /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/less/variables.less on line 40
+Request URL: /FB_Base/FB_Base/
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2273): lessc_parser->throwError()
+#1 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(121): lessc_parser->parse('//?// Variables...')
+#2 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#3 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(162): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#4 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(147): lessc->compileImportedProps(Array, Object(stdClass), Object(stdClass), Object(lessc_parser), '/Users/mauro/Do...')
+#5 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#6 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(284): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#7 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(278): lessc->compileProps(Object(stdClass), Object(stdClass))
+#8 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(193): lessc->compileRoot(Object(stdClass))
+#9 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1807): lessc->compileBlock(Object(stdClass))
+#10 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1830): lessc->compile('@import "bootst...', '/Users/mauro/Do...')
+#11 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1844): lessc->compileFile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#12 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2016): lessc->checkedCompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#13 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Controller/Component/CakelessComponent.php(37): lessc::ccompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#14 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/AppController.php(41): CakelessComponent->compile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#15 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#16 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#18 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/PagesController.php(93): Controller->render('home')
+#19 [internal function]: PagesController->display('home')
+#20 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#21 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#22 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#23 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#24 {main}
+2013-12-05 10:44:17 Error: [Exception] parse error: failed at `@bi-app-left            : "@{text-direction}" === 'ltr' ? 'left'  : 'right';` /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/less/variables.less on line 40
+Request URL: /FB_Base/FB_Base/
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2273): lessc_parser->throwError()
+#1 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(121): lessc_parser->parse('//?// Variables...')
+#2 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#3 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(162): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#4 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(147): lessc->compileImportedProps(Array, Object(stdClass), Object(stdClass), Object(lessc_parser), '/Users/mauro/Do...')
+#5 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#6 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(284): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#7 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(278): lessc->compileProps(Object(stdClass), Object(stdClass))
+#8 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(193): lessc->compileRoot(Object(stdClass))
+#9 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1807): lessc->compileBlock(Object(stdClass))
+#10 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1830): lessc->compile('@import "bootst...', '/Users/mauro/Do...')
+#11 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1844): lessc->compileFile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#12 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2016): lessc->checkedCompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#13 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Controller/Component/CakelessComponent.php(37): lessc::ccompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#14 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/AppController.php(41): CakelessComponent->compile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#15 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#16 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#18 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/PagesController.php(93): Controller->render('home')
+#19 [internal function]: PagesController->display('home')
+#20 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#21 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#22 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#23 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#24 {main}
+2013-12-05 10:44:17 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /FB_Base/FB_Base/css/cake.generic.css
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-05 10:44:18 Error: [Exception] parse error: failed at `@bi-app-left            : "@{text-direction}" === 'ltr' ? 'left'  : 'right';` /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/less/variables.less on line 40
+Request URL: /FB_Base/FB_Base/
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2273): lessc_parser->throwError()
+#1 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(121): lessc_parser->parse('//?// Variables...')
+#2 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#3 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(162): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#4 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(147): lessc->compileImportedProps(Array, Object(stdClass), Object(stdClass), Object(lessc_parser), '/Users/mauro/Do...')
+#5 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#6 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(284): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#7 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(278): lessc->compileProps(Object(stdClass), Object(stdClass))
+#8 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(193): lessc->compileRoot(Object(stdClass))
+#9 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1807): lessc->compileBlock(Object(stdClass))
+#10 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1830): lessc->compile('@import "bootst...', '/Users/mauro/Do...')
+#11 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1844): lessc->compileFile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#12 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2016): lessc->checkedCompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#13 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Controller/Component/CakelessComponent.php(37): lessc::ccompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#14 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/AppController.php(41): CakelessComponent->compile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#15 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#16 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#18 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/PagesController.php(93): Controller->render('home')
+#19 [internal function]: PagesController->display('home')
+#20 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#21 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#22 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#23 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#24 {main}
+2013-12-05 10:44:18 Error: [Exception] parse error: failed at `@bi-app-left            : "@{text-direction}" === 'ltr' ? 'left'  : 'right';` /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/less/variables.less on line 40
+Request URL: /FB_Base/FB_Base/
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2273): lessc_parser->throwError()
+#1 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(121): lessc_parser->parse('//?// Variables...')
+#2 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#3 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(162): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#4 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(147): lessc->compileImportedProps(Array, Object(stdClass), Object(stdClass), Object(lessc_parser), '/Users/mauro/Do...')
+#5 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#6 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(284): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#7 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(278): lessc->compileProps(Object(stdClass), Object(stdClass))
+#8 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(193): lessc->compileRoot(Object(stdClass))
+#9 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1807): lessc->compileBlock(Object(stdClass))
+#10 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1830): lessc->compile('@import "bootst...', '/Users/mauro/Do...')
+#11 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1844): lessc->compileFile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#12 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2016): lessc->checkedCompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#13 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Controller/Component/CakelessComponent.php(37): lessc::ccompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#14 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/AppController.php(41): CakelessComponent->compile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#15 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#16 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#18 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/PagesController.php(93): Controller->render('home')
+#19 [internal function]: PagesController->display('home')
+#20 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#21 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#22 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#23 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#24 {main}
+2013-12-05 10:44:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /FB_Base/FB_Base/css/cake.generic.css
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-05 10:44:19 Error: [Exception] parse error: failed at `@bi-app-left            : "@{text-direction}" === 'ltr' ? 'left'  : 'right';` /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/less/variables.less on line 40
+Request URL: /FB_Base/FB_Base/
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2273): lessc_parser->throwError()
+#1 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(121): lessc_parser->parse('//?// Variables...')
+#2 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#3 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(162): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#4 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(147): lessc->compileImportedProps(Array, Object(stdClass), Object(stdClass), Object(lessc_parser), '/Users/mauro/Do...')
+#5 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#6 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(284): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#7 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(278): lessc->compileProps(Object(stdClass), Object(stdClass))
+#8 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(193): lessc->compileRoot(Object(stdClass))
+#9 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1807): lessc->compileBlock(Object(stdClass))
+#10 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1830): lessc->compile('@import "bootst...', '/Users/mauro/Do...')
+#11 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1844): lessc->compileFile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#12 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2016): lessc->checkedCompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#13 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Controller/Component/CakelessComponent.php(37): lessc::ccompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#14 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/AppController.php(41): CakelessComponent->compile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#15 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#16 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#18 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/PagesController.php(93): Controller->render('home')
+#19 [internal function]: PagesController->display('home')
+#20 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#21 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#22 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#23 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#24 {main}
+2013-12-05 10:44:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /FB_Base/FB_Base/css/cake.generic.css
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-05 10:44:21 Error: [Exception] parse error: failed at `@bi-app-left            : "@{text-direction}" === 'ltr' ? 'left'  : 'right';` /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/less/variables.less on line 40
+Request URL: /FB_Base/FB_Base/
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2273): lessc_parser->throwError()
+#1 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(121): lessc_parser->parse('//?// Variables...')
+#2 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#3 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(162): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#4 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(147): lessc->compileImportedProps(Array, Object(stdClass), Object(stdClass), Object(lessc_parser), '/Users/mauro/Do...')
+#5 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#6 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(284): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#7 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(278): lessc->compileProps(Object(stdClass), Object(stdClass))
+#8 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(193): lessc->compileRoot(Object(stdClass))
+#9 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1807): lessc->compileBlock(Object(stdClass))
+#10 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1830): lessc->compile('@import "bootst...', '/Users/mauro/Do...')
+#11 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1844): lessc->compileFile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#12 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2016): lessc->checkedCompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#13 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Controller/Component/CakelessComponent.php(37): lessc::ccompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#14 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/AppController.php(41): CakelessComponent->compile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#15 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#16 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#18 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/PagesController.php(93): Controller->render('home')
+#19 [internal function]: PagesController->display('home')
+#20 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#21 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#22 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#23 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#24 {main}
+2013-12-05 10:44:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /FB_Base/FB_Base/css/cake.generic.css
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-05 10:44:21 Error: [Exception] parse error: failed at `@bi-app-left            : "@{text-direction}" === 'ltr' ? 'left'  : 'right';` /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/less/variables.less on line 40
+Request URL: /FB_Base/FB_Base/
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2273): lessc_parser->throwError()
+#1 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(121): lessc_parser->parse('//?// Variables...')
+#2 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#3 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(162): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#4 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(147): lessc->compileImportedProps(Array, Object(stdClass), Object(stdClass), Object(lessc_parser), '/Users/mauro/Do...')
+#5 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#6 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(284): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#7 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(278): lessc->compileProps(Object(stdClass), Object(stdClass))
+#8 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(193): lessc->compileRoot(Object(stdClass))
+#9 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1807): lessc->compileBlock(Object(stdClass))
+#10 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1830): lessc->compile('@import "bootst...', '/Users/mauro/Do...')
+#11 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1844): lessc->compileFile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#12 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2016): lessc->checkedCompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#13 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Controller/Component/CakelessComponent.php(37): lessc::ccompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#14 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/AppController.php(41): CakelessComponent->compile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#15 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#16 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#18 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/PagesController.php(93): Controller->render('home')
+#19 [internal function]: PagesController->display('home')
+#20 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#21 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#22 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#23 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#24 {main}
+2013-12-05 10:44:21 Error: [Exception] parse error: failed at `@bi-app-left            : "@{text-direction}" === 'ltr' ? 'left'  : 'right';` /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/less/variables.less on line 40
+Request URL: /FB_Base/FB_Base/
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2273): lessc_parser->throwError()
+#1 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(121): lessc_parser->parse('//?// Variables...')
+#2 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#3 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(162): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#4 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(147): lessc->compileImportedProps(Array, Object(stdClass), Object(stdClass), Object(lessc_parser), '/Users/mauro/Do...')
+#5 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#6 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(284): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#7 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(278): lessc->compileProps(Object(stdClass), Object(stdClass))
+#8 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(193): lessc->compileRoot(Object(stdClass))
+#9 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1807): lessc->compileBlock(Object(stdClass))
+#10 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1830): lessc->compile('@import "bootst...', '/Users/mauro/Do...')
+#11 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1844): lessc->compileFile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#12 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2016): lessc->checkedCompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#13 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Controller/Component/CakelessComponent.php(37): lessc::ccompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#14 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/AppController.php(41): CakelessComponent->compile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#15 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#16 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#18 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/PagesController.php(93): Controller->render('home')
+#19 [internal function]: PagesController->display('home')
+#20 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#21 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#22 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#23 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#24 {main}
+2013-12-05 10:44:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /FB_Base/FB_Base/css/cake.generic.css
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-05 11:17:28 Error: [Exception] parse error: failed at `@bi-app-left            : ~`"@{text-direction}" === 'ltr' ? 'left'  : 'right'`;` /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/less/variables.less on line 40
+Request URL: /FB_Base/FB_Base/
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2273): lessc_parser->throwError()
+#1 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(121): lessc_parser->parse('//?// Variables...')
+#2 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#3 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(162): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#4 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(147): lessc->compileImportedProps(Array, Object(stdClass), Object(stdClass), Object(lessc_parser), '/Users/mauro/Do...')
+#5 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#6 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(284): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#7 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(278): lessc->compileProps(Object(stdClass), Object(stdClass))
+#8 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(193): lessc->compileRoot(Object(stdClass))
+#9 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1807): lessc->compileBlock(Object(stdClass))
+#10 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1830): lessc->compile('@import "bootst...', '/Users/mauro/Do...')
+#11 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1844): lessc->compileFile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#12 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2016): lessc->checkedCompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#13 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Controller/Component/CakelessComponent.php(37): lessc::ccompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#14 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/AppController.php(41): CakelessComponent->compile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#15 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#16 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#18 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/PagesController.php(93): Controller->render('home')
+#19 [internal function]: PagesController->display('home')
+#20 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#21 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#22 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#23 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#24 {main}
+2013-12-05 11:17:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /FB_Base/FB_Base/css/cake.generic.css
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-05 11:17:29 Error: [Exception] parse error: failed at `@bi-app-left            : ~`"@{text-direction}" === 'ltr' ? 'left'  : 'right'`;` /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/less/variables.less on line 40
+Request URL: /FB_Base/FB_Base/
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2273): lessc_parser->throwError()
+#1 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(121): lessc_parser->parse('//?// Variables...')
+#2 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#3 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(162): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#4 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(147): lessc->compileImportedProps(Array, Object(stdClass), Object(stdClass), Object(lessc_parser), '/Users/mauro/Do...')
+#5 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#6 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(284): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#7 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(278): lessc->compileProps(Object(stdClass), Object(stdClass))
+#8 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(193): lessc->compileRoot(Object(stdClass))
+#9 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1807): lessc->compileBlock(Object(stdClass))
+#10 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1830): lessc->compile('@import "bootst...', '/Users/mauro/Do...')
+#11 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1844): lessc->compileFile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#12 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2016): lessc->checkedCompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#13 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Controller/Component/CakelessComponent.php(37): lessc::ccompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#14 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/AppController.php(41): CakelessComponent->compile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#15 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#16 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#18 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/PagesController.php(93): Controller->render('home')
+#19 [internal function]: PagesController->display('home')
+#20 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#21 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#22 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#23 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#24 {main}
+2013-12-05 11:17:29 Error: [Exception] parse error: failed at `@bi-app-left            : ~`"@{text-direction}" === 'ltr' ? 'left'  : 'right'`;` /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/less/variables.less on line 40
+Request URL: /FB_Base/FB_Base/
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2273): lessc_parser->throwError()
+#1 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(121): lessc_parser->parse('//?// Variables...')
+#2 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#3 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(162): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#4 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(147): lessc->compileImportedProps(Array, Object(stdClass), Object(stdClass), Object(lessc_parser), '/Users/mauro/Do...')
+#5 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#6 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(284): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#7 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(278): lessc->compileProps(Object(stdClass), Object(stdClass))
+#8 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(193): lessc->compileRoot(Object(stdClass))
+#9 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1807): lessc->compileBlock(Object(stdClass))
+#10 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1830): lessc->compile('@import "bootst...', '/Users/mauro/Do...')
+#11 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(1844): lessc->compileFile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#12 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Vendor/lessphp/lessc.inc.php(2016): lessc->checkedCompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#13 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Plugin/Cakeless/Controller/Component/CakelessComponent.php(37): lessc::ccompile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#14 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/AppController.php(41): CakelessComponent->compile('/Users/mauro/Do...', '/Users/mauro/Do...')
+#15 [internal function]: AppController->beforeRender(Object(CakeEvent))
+#16 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#17 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(925): CakeEventManager->dispatch(Object(CakeEvent))
+#18 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/app/Controller/PagesController.php(93): Controller->render('home')
+#19 [internal function]: PagesController->display('home')
+#20 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#21 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#22 /Users/mauro/Documents/git_repos/FB_Base/FB_Base/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#23 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#24 {main}
+2013-12-05 11:17:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /FB_Base/FB_Base/css/cake.generic.css
+Stack Trace:
+#0 /Users/mauro/Documents/git_repos/FB_base/FB_Base/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

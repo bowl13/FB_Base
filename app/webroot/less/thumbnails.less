@@ -7,6 +7,7 @@
 .thumbnail {
   .img-thumbnail();
   display: block; // Override the inline-block from `.img-thumbnail`
+  margin-bottom: @line-height-computed;
 
   > img {
     .img-responsive();
@@ -22,8 +23,8 @@ a.thumbnail:focus {
 
 // Images and captions
 .thumbnail > img {
-  margin-left: auto;
-  margin-right: auto;
+  .margin-left(auto);
+  .margin-right(auto);
 }
 .thumbnail .caption {
   padding: @thumbnail-caption-padding;

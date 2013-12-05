@@ -39,8 +39,8 @@
 // Center-align a block level element
 .center-block() {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  .margin-left(auto);
+  .margin-right(auto);
 }
 
 // Sizing shortcuts
@@ -69,8 +69,24 @@
 }
 
 // CSS image replacement
+//
+// Heads up! v3 launched with with only `.hide-text()`, but per our pattern for
+// mixins being reused as classes with the same name, this doesn't hold up. As
+// of v3.0.1 we have added `.text-hide()` and deprecated `.hide-text()`. Note
+// that we cannot chain the mixins together in Less, so they are repeated.
+//
 // Source: https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757
+
+// Deprecated as of v3.0.1 (will be removed in v4)
 .hide-text() {
+  font: ~"0/0" a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+// New mixin to use as of v3.0.1
+.text-hide() {
   font: ~"0/0" a;
   color: transparent;
   text-shadow: none;
@@ -83,24 +99,6 @@
 // CSS3 PROPERTIES
 // --------------------------------------------------
 
-// Single side border-radius
-.border-top-radius(@radius) {
-  border-top-right-radius: @radius;
-   border-top-left-radius: @radius;
-}
-.border-right-radius(@radius) {
-  border-bottom-right-radius: @radius;
-     border-top-right-radius: @radius;
-}
-.border-bottom-radius(@radius) {
-  border-bottom-right-radius: @radius;
-   border-bottom-left-radius: @radius;
-}
-.border-left-radius(@radius) {
-  border-bottom-left-radius: @radius;
-     border-top-left-radius: @radius;
-}
-
 // Drop shadows
 .box-shadow(@shadow) {
   -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
@@ -111,6 +109,10 @@
 .transition(@transition) {
   -webkit-transition: @transition;
           transition: @transition;
+}
+.transition-property(@transition-property) {
+  -webkit-transition-property: @transition-property;
+          transition-property: @transition-property;
 }
 .transition-delay(@transition-delay) {
   -webkit-transition-delay: @transition-delay;
@@ -152,6 +154,33 @@
   -webkit-transform: translate3d(@x, @y, @z);
           transform: translate3d(@x, @y, @z);
 }
+
+.rotateX(@degrees) {
+  -webkit-transform: rotateX(@degrees);
+      -ms-transform: rotateX(@degrees); // IE9+
+          transform: rotateX(@degrees);
+}
+.rotateY(@degrees) {
+  -webkit-transform: rotateY(@degrees);
+      -ms-transform: rotateY(@degrees); // IE9+
+          transform: rotateY(@degrees);
+}
+.perspective(@perspective) {
+  -webkit-perspective: @perspective;
+     -moz-perspective: @perspective;
+          perspective: @perspective;
+}
+.perspective-origin(@perspective) {
+  -webkit-perspective-origin: @perspective;
+     -moz-perspective-origin: @perspective;
+          perspective-origin: @perspective;
+}
+.transform-origin(@origin){
+  -webkit-transform-origin: @origin;
+     -moz-transform-origin: @origin;
+          transform-origin: @origin;
+}
+
 
 // Backface visibility
 // Prevent browsers from flickering when using CSS 3D transforms.
@@ -276,11 +305,11 @@
     background-image: radial-gradient(circle, @inner-color, @outer-color);
     background-repeat: no-repeat;
   }
-  .striped(@color: #555; @angle: 45deg) {
-    background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(255,255,255,.15)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255,255,255,.15)), color-stop(.75, rgba(255,255,255,.15)), color-stop(.75, transparent), to(transparent));
-    background-image: -webkit-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
-    background-image: -moz-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
-    background-image: linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+  .striped(@color: rgba(255,255,255,.15); @angle: 45deg) {
+    background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, @color), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, @color), color-stop(.75, @color), color-stop(.75, transparent), to(transparent));
+    background-image: -webkit-linear-gradient(@angle, @color 25%, transparent 25%, transparent 50%, @color 50%, @color 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(@angle, @color 25%, transparent 25%, transparent 50%, @color 50%, @color 75%, transparent 75%, transparent);
+    background-image: linear-gradient(@angle, @color 25%, transparent 25%, transparent 50%, @color 50%, @color 75%, transparent 75%, transparent);
   }
 }
 
@@ -393,7 +422,8 @@
   .table-hover > tbody > tr {
     > td.@{state}:hover,
     > th.@{state}:hover,
-    &.@{state}:hover > td {
+    &.@{state}:hover > td,
+    &.@{state}:hover > th {
       background-color: darken(@background, 5%);
       border-color: darken(@border, 5%);
     }
@@ -432,7 +462,7 @@
     &:active,
     &.active {
       background-color: @background;
-          border-color: @border
+          border-color: @border;
     }
   }
 }
@@ -443,7 +473,6 @@
   padding: @padding-vertical @padding-horizontal;
   font-size: @font-size;
   line-height: @line-height;
-  border-radius: @border-radius;
 }
 
 // Pagination
@@ -454,18 +483,6 @@
     > span {
       padding: @padding-vertical @padding-horizontal;
       font-size: @font-size;
-    }
-    &:first-child {
-      > a,
-      > span {
-        .border-left-radius(@border-radius);
-      }
-    }
-    &:last-child {
-      > a,
-      > span {
-        .border-right-radius(@border-radius);
-      }
     }
   }
 }
@@ -496,7 +513,7 @@
 .progress-bar-variant(@color) {
   background-color: @color;
   .progress-striped & {
-    #gradient > .striped(@color);
+    #gradient > .striped();
   }
 }
 
@@ -511,8 +528,8 @@
 }
 
 .responsive-invisibility() {
-  display: none !important;
-  tr& { display: none !important; }
+    &,
+  tr&,
   th&,
   td& { display: none !important; }
 }
@@ -522,30 +539,30 @@
 
 // Centered container element
 .container-fixed() {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left:  (@grid-gutter-width / 2);
-  padding-right: (@grid-gutter-width / 2);
+  .margin-right(auto);
+  .margin-left(auto);
+  .padding-left( (@grid-gutter-width / 2));
+  .padding-right((@grid-gutter-width / 2));
   .clearfix();
 }
 
 // Creates a wrapper for a series of columns
 .make-row(@gutter: @grid-gutter-width) {
-  margin-left:  (@gutter / -2);
-  margin-right: (@gutter / -2);
+  .margin-left( (@gutter / -2));
+  .margin-right((@gutter / -2));
   .clearfix();
 }
 
 // Generate the extra small columns
 .make-xs-column(@columns; @gutter: @grid-gutter-width) {
   position: relative;
-  float: left;
+  .float(left);
   width: percentage((@columns / @grid-columns));
   // Prevent columns from collapsing when empty
   min-height: 1px;
   // Inner gutter via padding
-  padding-left:  (@gutter / 2);
-  padding-right: (@gutter / 2);
+  .padding-left( (@gutter / 2));
+  .padding-right((@gutter / 2));
 }
 
 // Generate the small columns
@@ -554,30 +571,30 @@
   // Prevent columns from collapsing when empty
   min-height: 1px;
   // Inner gutter via padding
-  padding-left:  (@gutter / 2);
-  padding-right: (@gutter / 2);
+  .padding-left( (@gutter / 2));
+  .padding-right((@gutter / 2));
 
   // Calculate width based on number of columns available
-  @media (min-width: @screen-sm) {
-    float: left;
+  @media (min-width: @screen-sm-min) {
+    .float(left);
     width: percentage((@columns / @grid-columns));
   }
 }
 
 // Generate the small column offsets
 .make-sm-column-offset(@columns) {
-  @media (min-width: @screen-sm) {
-    margin-left: percentage((@columns / @grid-columns));
+  @media (min-width: @screen-sm-min) {
+    .margin-left(percentage((@columns / @grid-columns)));
   }
 }
 .make-sm-column-push(@columns) {
-  @media (min-width: @screen-sm) {
-    left: percentage((@columns / @grid-columns));
+  @media (min-width: @screen-sm-min) {
+    .left(percentage((@columns / @grid-columns)));
   }
 }
 .make-sm-column-pull(@columns) {
-  @media (min-width: @screen-sm) {
-    right: percentage((@columns / @grid-columns));
+  @media (min-width: @screen-sm-min) {
+    .right(percentage((@columns / @grid-columns)));
   }
 }
 
@@ -587,30 +604,30 @@
   // Prevent columns from collapsing when empty
   min-height: 1px;
   // Inner gutter via padding
-  padding-left:  (@gutter / 2);
-  padding-right: (@gutter / 2);
+  .padding-left( (@gutter / 2));
+  .padding-right((@gutter / 2));
 
   // Calculate width based on number of columns available
-  @media (min-width: @screen-md) {
-    float: left;
+  @media (min-width: @screen-md-min) {
+    .float(left);
     width: percentage((@columns / @grid-columns));
   }
 }
 
-// Generate the large column offsets
+// Generate the medium column offsets
 .make-md-column-offset(@columns) {
-  @media (min-width: @screen-md) {
-    margin-left: percentage((@columns / @grid-columns));
+  @media (min-width: @screen-md-min) {
+    .margin-left(percentage((@columns / @grid-columns)));
   }
 }
 .make-md-column-push(@columns) {
   @media (min-width: @screen-md) {
-    left: percentage((@columns / @grid-columns));
+    .left(percentage((@columns / @grid-columns)));
   }
 }
 .make-md-column-pull(@columns) {
-  @media (min-width: @screen-md) {
-    right: percentage((@columns / @grid-columns));
+  @media (min-width: @screen-md-min) {
+    .right(percentage((@columns / @grid-columns)));
   }
 }
 
@@ -620,30 +637,30 @@
   // Prevent columns from collapsing when empty
   min-height: 1px;
   // Inner gutter via padding
-  padding-left:  (@gutter / 2);
-  padding-right: (@gutter / 2);
+  .padding-left( (@gutter / 2));
+  .padding-right((@gutter / 2));
 
   // Calculate width based on number of columns available
-  @media (min-width: @screen-lg) {
-    float: left;
+  @media (min-width: @screen-lg-min) {
+    .float(left);
     width: percentage((@columns / @grid-columns));
   }
 }
 
 // Generate the large column offsets
 .make-lg-column-offset(@columns) {
-  @media (min-width: @screen-lg) {
-    margin-left: percentage((@columns / @grid-columns));
+  @media (min-width: @screen-lg-min) {
+    .margin-left(percentage((@columns / @grid-columns)));
   }
 }
 .make-lg-column-push(@columns) {
-  @media (min-width: @screen-lg) {
-    left: percentage((@columns / @grid-columns));
+  @media (min-width: @screen-lg-min) {
+    .left(percentage((@columns / @grid-columns)));
   }
 }
 .make-lg-column-pull(@columns) {
-  @media (min-width: @screen-lg) {
-    right: percentage((@columns / @grid-columns));
+  @media (min-width: @screen-lg-min) {
+    .right(percentage((@columns / @grid-columns)));
   }
 }
 
@@ -662,11 +679,8 @@
   // Set the border and box shadow on specific inputs to match
   .form-control {
     border-color: @border-color;
-    .box-shadow(inset 0 1px 1px rgba(0,0,0,.075)); // Redeclare so transitions work
     &:focus {
       border-color: darken(@border-color, 10%);
-      @shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px lighten(@border-color, 20%);
-      .box-shadow(@shadow);
     }
   }
   // Set validation states also for addons
@@ -695,7 +709,6 @@
   &:focus {
     border-color: @color;
     outline: 0;
-    .box-shadow(~"inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px @{color-rgba}");
   }
 }
 
@@ -710,7 +723,6 @@
   padding: @padding-vertical @padding-horizontal;
   font-size: @font-size;
   line-height: @line-height;
-  border-radius: @border-radius;
 
   select& {
     height: @input-height;
@@ -720,4 +732,305 @@
   textarea& {
     height: auto;
   }
+}
+
+
+// ------------------------------------------
+// Bi app mixins (https://github.com/anasnakawa/bi-app-less)
+// ------------------------------------------
+
+// padding
+// ------------------------------------------
+.padding-left(@distance) when (@bi-app-left = left) {
+  padding-left: @distance;
+}
+
+.padding-left(@distance) when (@bi-app-left = right) {
+  padding-right: @distance;
+}
+
+.padding-right(@distance) when (@bi-app-right = right) {
+  padding-right: @distance;
+}
+
+.padding-right(@distance) when (@bi-app-right = left) {
+  padding-left: @distance;
+}
+
+.padding(@top, @right, @bottom, @left) when (@bi-app-left = left) {
+  padding: @top @right @bottom @left;
+}
+
+.padding(@top, @right, @bottom, @left) when (@bi-app-left = right) {
+  padding: @top @left @bottom @right;
+}
+
+.padding(@values) {
+  padding: @values;
+}
+
+// margin
+// ------------------------------------------
+.margin-left(@distance) when (@bi-app-left = left) {
+  margin-left: @distance;
+}
+
+.margin-left(@distance) when (@bi-app-left = right) {
+  margin-right: @distance;
+}
+
+.margin-right(@distance) when (@bi-app-right = right) {
+  margin-right: @distance;
+}
+
+.margin-right(@distance) when (@bi-app-right = left) {
+  margin-left: @distance;
+}
+
+.margin(@top, @right, @bottom, @left) when (@bi-app-left = left) {
+  margin: @top @right @bottom @left;
+}
+
+.margin(@top, @right, @bottom, @left) when (@bi-app-left = right) {
+  margin: @top @left @bottom @right;
+}
+
+// float
+// ------------------------------------------
+.bi-app-float-left {
+  float: @bi-app-left;
+}
+
+.bi-app-float-right {
+  float: @bi-app-right;
+}
+
+.float(@direction) when (@direction = left) {
+  .bi-app-float-left;
+}
+
+.float(@direction) when (@direction = right) {
+  .bi-app-float-right;
+}
+
+// text-align
+// ------------------------------------------
+.bi-app-text-align-left {
+  text-align: @bi-app-left;
+}
+
+.bi-app-text-align-right {
+  text-align: @bi-app-right;
+}
+
+.text-align(@direction) when (@direction = left) {
+  .bi-app-text-align-left;
+}
+
+.text-align(@direction) when (@direction = right) {
+  .bi-app-text-align-right;
+}
+
+// clear
+// ------------------------------------------
+.bi-app-clear-left {
+  clear: @bi-app-left;
+}
+
+.bi-app-clear-right {
+  clear: @bi-app-right;
+}
+
+.clear(@direction) when (@direction = left) {
+  .bi-app-clear-left;
+}
+
+.clear(@direction) when (@direction = right) {
+  .bi-app-clear-right;
+}
+
+// left / right
+// ------------------------------------------
+.left(@distance) when (@bi-app-left = left) {
+  left: @distance;
+}
+
+.left(@distance) when (@bi-app-left = right) {
+  right: @distance;
+}
+
+.right(@distance) when (@bi-app-right = right) {
+  right: @distance;
+}
+
+.right(@distance) when (@bi-app-right = left) {
+  left: @distance;
+}
+
+// border
+// ------------------------------------------
+
+// width
+.border-left-width(@width) when (@bi-app-left = left) {
+  border-left-width: @width;
+}
+
+.border-left-width(@width) when (@bi-app-left = right) {
+  border-right-width: @width;
+}
+
+.border-right-width(@width) when (@bi-app-right = right) {
+  border-right-width: @width;
+}
+
+.border-right-width(@width) when (@bi-app-right = left) {
+  border-left-width: @width;
+}
+
+.border-width(@top, @right, @bottom, @left) when (@bi-app-left = left) {
+  border-width: @top @right @bottom @left;
+}
+
+.border-width(@top, @right, @bottom, @left) when (@bi-app-left = right) {
+  border-width: @top @left @bottom @right;
+}
+
+// style
+.border-left-style(@style) when (@bi-app-left = left) {
+  border-left-style: @style;
+}
+
+.border-left-style(@style) when (@bi-app-left = right) {
+  border-right-style: @style;
+}
+
+.border-right-style(@style) when (@bi-app-right = right) {
+  border-right-style: @style;
+}
+
+.border-right-style(@style) when (@bi-app-right = left) {
+  border-left-style: @style;
+}
+
+.border-style(@top, @right, @bottom, @left) when (@bi-app-left = left) {
+  border-style: @top @right @bottom @left;
+}
+
+.border-style(@top, @right, @bottom, @left) when (@bi-app-left = right) {
+  border-style: @top @left @bottom @right;
+}
+
+// color
+.border-left-color(@color) when (@bi-app-left = left) {
+  border-left-color: @color;
+}
+
+.border-left-color(@color) when (@bi-app-left = right) {
+  border-right-color: @color;
+}
+
+.border-right-color(@color) when (@bi-app-right = right) {
+  border-right-color: @color;
+}
+
+.border-right-color(@color) when (@bi-app-right = left) {
+  border-left-color: @color;
+}
+
+.border-color(@top, @right, @bottom, @left) when (@bi-app-left = left) {
+  border-color: @top @right @bottom @left;
+}
+
+.border-color(@top, @right, @bottom, @left) when (@bi-app-left = right) {
+  border-color: @top @left @bottom @right;
+}
+
+// generic border
+.border-left(@border) when (@bi-app-left = left) {
+  border-left: @border;
+}
+
+.border-left(@border) when (@bi-app-left = right) {
+  border-right: @border;
+}
+
+.border-right(@border) when (@bi-app-right = right) {
+  border-right: @border;
+}
+
+.border-right(@border) when (@bi-app-right = left) {
+  border-left: @border;
+}
+
+// radius
+.border-top-left-radius(@radius) when (@bi-app-left = left) {
+  -webkit-border-top-left-radius: @radius;
+          border-top-left-radius: @radius;
+}
+
+.border-top-left-radius(@radius) when (@bi-app-left = right) {
+  -webkit-border-top-right-radius: @radius;
+          border-top-right-radius: @radius;
+}
+
+.border-top-right-radius(@radius) when (@bi-app-right = right) {
+  -webkit-border-top-right-radius: @radius;
+          border-top-right-radius: @radius;
+}
+
+.border-top-right-radius(@radius) when (@bi-app-right = left) {
+  -webkit-border-top-left-radius: @radius;
+          border-top-left-radius: @radius;
+}
+
+.border-bottom-left-radius(@radius) when (@bi-app-left = left) {
+  -webkit-border-bottom-left-radius: @radius;
+          border-bottom-left-radius: @radius;
+}
+
+.border-bottom-left-radius(@radius) when (@bi-app-left = right) {
+  -webkit-border-bottom-right-radius: @radius;
+          border-bottom-right-radius: @radius;
+}
+
+.border-bottom-right-radius(@radius) when (@bi-app-right = right) {
+  -webkit-border-bottom-right-radius: @radius;
+          border-bottom-right-radius: @radius;
+}
+
+.border-bottom-right-radius(@radius) when (@bi-app-right = left) {
+  -webkit-border-bottom-left-radius: @radius;
+          border-bottom-left-radius: @radius;
+}
+
+.border-right-radius(@radius) {
+  .border-top-right-radius(@radius);
+  .border-bottom-right-radius(@radius);
+}
+
+.border-left-radius(@radius) {
+  .border-top-left-radius(@radius);
+  .border-bottom-left-radius(@radius);
+}
+
+.border-top-radius(@radius) {
+  .border-top-left-radius(@radius);
+  .border-top-right-radius(@radius);
+}
+
+.border-bottom-radius(@radius) {
+  .border-bottom-left-radius(@radius);
+  .border-bottom-right-radius(@radius);
+}
+
+.border-radius(@topLeft, @topRight: null, @bottomRight: null, @bottomLeft: null) when (@topRight = null) {
+  -webkit-border-radius: @topLeft;
+          border-radius: @topLeft;
+}
+
+.border-radius(@topLeft, @topRight: null, @bottomRight: null, @bottomLeft: null) when not (@topRight = null) {
+  .border-top-left-radius(@topLeft);
+  .border-top-right-radius(@topRight);
+  .border-bottom-right-radius(@bottomRight);
+  .border-bottom-left-radius(@bottomLeft);
 }
